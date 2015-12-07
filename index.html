@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Cutest Kitten Pageant</title>
+  <meta name="description" content="cutest kitten pageant">
+  <meta name="keywords" content="kitten, cat, pageant, cute">
+  <meta name="author" content="Tim Nguyen">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans: 400,700">
+  <link rel="stylesheet" type="text/css" href="vote.css">
 </head>
 <body>
+<div class="wrapper">
+  <header>
+    <nav>
+      <div><p>KITTENS Inc.</p></div>
+      <a href="#" id="menu-icon"><img id="menu-icon" src="images/menu.png" width="40px" height="40px" title="menu" alt="navigation menu bar"></a>
+      <ul>
+        <li class="navItem"><a href="#">Home</a></li>
+        <li class="navItem"><a href="#">About</a></li>
+        <li class="navItem"><a href="#">Cats</a></li>
+      </ul>
+    </nav>
+    <div class="img-container">
+    </div>
+    <h1>Cutest Kitten Pageant</h1>
+  </header>
+  <main>
+    <h3>Hello! Please vote for the cutest kitten by clicking on its picture!</h3>
+    <p>Vote tally will be displayed via a bar chart after each vote.</p>
+    <div class="container">
+      <div>
+        <img id="firstImg">
+        <img id="secondImg">
+        <p id='voteAgain'></p>
+        <div id='btnContainer'></div>
+      </div>
+      <div class="chart">
+        <div id="legend"></div>
+        <div id="kitChart"></div>
+        <div class="smallImg">
+          <figure>
+          <img id="firstImgChart">
+          <figcaption id="firstImgCap"></figcaption>
+          </figure>
 
+          <figure>
+          <img id="secondImgChart">
+          <figcaption id="secondImgCap"></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </main>
+  </div>
+  <footer>
+    <address>
+      Kitten Inc.<br>
+      123 Your Street<br>
+      Seattle, WA 981##<br>
+    </address>
+    <address>
+      Tel. 206-123-####<br>
+      Fax. 206.123-####<br>
+      E-mail: <a href="mailto:TimNguyen1389@yahoo.com">TimNguyen1389@yahoo.com</a>
+    </address>
 
+  </footer>
 
-<script type="text/javascript" src="vote.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js'></script>
+  <script type="text/javascript" src="vote.js"></script>
+
 </body>
 </html>
