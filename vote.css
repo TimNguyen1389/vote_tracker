@@ -1,0 +1,173 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  padding-bottom: 120px;
+  background-color: #e6e2af;
+}
+
+.wrapper {
+  margin-top: 50px;
+}
+
+main, h1 {
+  margin-left: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: #002f2f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav div p {
+  padding-left: 15px;
+}
+
+.navItem {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+#menu-icon {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #c5dae0;
+}
+
+#voteAgain {
+  font-weight: bold;
+}
+
+button {
+  font-size: 18px;
+  background-color: #002f2f;
+  color: white;
+  border-radius: 5px;
+}
+
+.highlight {
+  border: 50px solid #002f2f;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#firstImg, #secondImg {
+  margin-left: 50px;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 100px;
+}
+
+.smallImg, #kitChart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#legend {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
+
+#legend li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  right: 0;
+  clear: both;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 100px;
+  background-color: #000;
+  color: white;
+}
+
+@media only screen and (max-width: 950px) {
+
+  footer {
+    flex-direction: column;
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  #menu-icon {
+    display: block;
+    padding-right: 10px;
+  }
+
+  nav ul, nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 10px 0px;
+    background: #002f2f;
+    right: 0px;
+    top: 20px;
+    width: 20%;
+    border-radius: 0px 0 6px 6px;
+  }
+
+  nav:hover ul {
+    display: block;
+  }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+}
+
